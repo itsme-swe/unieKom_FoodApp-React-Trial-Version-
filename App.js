@@ -20,7 +20,7 @@ E.g ⇒ const HeadingComponent = function(){  return <h2>I am functional compone
 
 To wrap functional component inside render we root.render(<HeadingComponent/>).
 
-5️⃣ Aub agar humae 1 functional component ko kisi dusrae component kae andar pass karna hota hai toh hum use karte hai "<ComponentName/>" isae pass karte hai jis component ko render karenge uskae andar.
+5️⃣ Aub agar humae 1 functional component ko kisi dusrae component kae andar pass karna hota hai toh hum use karte hai "<ComponentName/>" isae pass karte hai jis component ko render karenge uskae andar. Aur isae hum "component composition" bhi boltae hai. 
 
 6️⃣
 
