@@ -20,7 +20,7 @@ E.g ⇒ const HeadingComponent = function(){  return <h2>I am functional compone
 
 To wrap functional component inside render we root.render(<HeadingComponent/>).
 
-5️⃣
+5️⃣ Aub agar humae 1 functional component ko kisi dusrae component kae andar pass karna hota hai toh hum use karte hai "<ComponentName/>" isae pass karte hai jis component ko render karenge uskae andar.
 
 6️⃣
 
@@ -38,5 +38,14 @@ const HeadingComponent = function () {
   return <h2>I am functional component</h2>;
 };
 
+const Title = () => {
+  return (
+    <h1 className="head" tabIndex="5">
+      <HeadingComponent />
+      Functional Component using Arrow Function
+    </h1>
+  );
+};
+
 const root = ReactDOM.createRoot(document.querySelector(".head"));
-root.render(<HeadingComponent />);
+root.render(<Title />);
