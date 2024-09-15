@@ -21,6 +21,7 @@ E.g ⇒ const HeadingComponent = function(){  return <h2>I am functional compone
 To wrap functional component inside render we root.render(<HeadingComponent/>).
 
 5️⃣ Aub agar humae 1 functional component ko kisi dusrae component kae andar pass karna hota hai toh hum use karte hai "<ComponentName/>". Hum angle brackets kae anadr component name pass karte jisae humae dusrae component kae andar pass karna hai . Aur is process ko hum bolte hai  "component composition" .
+Aur agar humae koi jsx element kisi component kae andar pass karna hai toh hum use karte hai curly braces "{jsxElement}".
 
 6️⃣
 
