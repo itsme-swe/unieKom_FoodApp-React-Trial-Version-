@@ -38,6 +38,7 @@ const HeadingComponent = function () {
   return <h2>I am functional component</h2>;
 };
 
+// Functional Component using Arrow function
 const Title = () => {
   return (
     <h1 className="head" tabIndex="5">
