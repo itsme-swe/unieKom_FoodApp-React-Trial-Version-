@@ -28,6 +28,14 @@
                     return <h2>I am functional component</h2>
                     }
 
+
+    ⇒ Using arrow function
+    const FunctionalComponent = () => {
+                    return (<h2 className="app">
+                    I am functional component
+                    </h2>)
+                };
+
 To wrap functional component inside render we root.render(<HeadingComponent/>).
 
 5️⃣ Aub agar humae 1 functional component ko kisi dusrae component kae andar pass karna hota hai toh hum use karte hai,angle brackets kae anadr component name pass karte jisae humae dusrae component kae andar pass karna hai . Aur is process ko hum bolte hai "component composition" .
