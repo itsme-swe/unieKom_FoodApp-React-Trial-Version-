@@ -1,1 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
 
+.logo {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+  margin-right: 80px;
+}
+
+.search-bar {
+  padding: 10px;
+}
+
+.restro-cards {
+  width: 200px;
+  height: auto;
+  padding: 2px;
+  font-size: smaller;
+  margin: 5px;
+}
+
+.restro-cards:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.restro-logo {
+  width: 100%;
+}
+
+.restro-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+}
