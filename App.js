@@ -22,6 +22,11 @@ const HeaderComponent = () => {
 //⇒ Yae hamara Restaurant Component hai joh ki dynamically typed hai.
 const RestroCardComponent = (props) => {
   const { restroData } = props;
+
+  const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } =
+    restroData?.info;
+
+  const { slaString } = restroData?.info?.sla;
   return (
     <div className="restro-cards" style={{ backgroundColor: "#f0f0f0" }}>
       <img
@@ -29,14 +34,14 @@ const RestroCardComponent = (props) => {
         alt="logo"
         src={
           "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          restroData.info.cloudinaryImageId
+          cloudinaryImageId
         }
       />
-      <h3>{restroData.info.name}</h3>
-      <h4>{restroData.info.cuisines.join(", ")}</h4>
-      <h4>{restroData.info.avgRating}</h4>
-      <h4>{restroData.info.costForTwo}</h4>
-      <h4>{restroData.info.sla.deliveryTime} minutes</h4>
+      <h3>{name}</h3>
+      <h4>{cuisines.join(", ")}</h4>
+      <h4>{avgRating}</h4>
+      <h4>{costForTwo}</h4>
+      <h4>{slaString} minutes</h4>
     </div>
   );
 };
