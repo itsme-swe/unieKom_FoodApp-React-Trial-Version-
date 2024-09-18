@@ -103,3 +103,7 @@ Agar hum **multiline component** likh rahe hai toh humae jsx component ki body k
     };
 
 Never use index values as keys in map() function bcoz its not recommended. The second parameter in map() is index only.
+
+### Folder Structure of React App
+
+**1.** src
