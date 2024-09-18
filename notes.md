@@ -82,3 +82,22 @@ Agar hum **multiline component** likh rahe hai toh humae jsx component ki body k
 8️⃣ Use **json Viewer plugin** extension on chrome to see json data in a structured format.
 
 9️⃣ **config Driven UI ⇒** Ka matlab hota hai hum apne UI ko data sae control karte hai. Config comes from backend.
+
+🔟 **.map()** jub bhi map() function use karenge kisi bhi array ko render karne kae liye toh hame hamesha **key** as prop bhi pass karni jaruri hoti hai. Agar hum key pass nhi karte hai toh hamare pass joh error hamae console window mae aata hai vo hota hai **" Warning: Each child in a list should have a unique "key" prop. "**. Isliye hamesha hamae key as prop pass karni chaiye.
+
+    const BodyComponent = () => {
+    return (
+    <div className="body">
+
+    <div className="search-bar">Search</div>
+
+    <div className="restro-container">
+    { restroList.map((elements) => {
+        return (
+        <RestroCardComponent key={elements.info.id} restroData={elements} />
+        );
+        })}
+        </div>
+        </div>
+        );
+    };

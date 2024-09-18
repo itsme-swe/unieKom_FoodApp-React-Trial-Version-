@@ -497,7 +497,9 @@ const BodyComponent = () => {
       <div className="search-bar">Search</div>
       <div className="restro-container">
         {restroList.map((elements) => {
-          return <RestroCardComponent restroData={elements} />;
+          return (
+            <RestroCardComponent key={elements.info.id} restroData={elements} />
+          );
         })}
       </div>
     </div>
