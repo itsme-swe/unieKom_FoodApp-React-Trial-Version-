@@ -28,7 +28,7 @@ const RestroCardComponent = (props) => {
 
   const { slaString } = restroData?.info?.sla;
   return (
-    <div className="restro-cards" style={{ backgroundColor: "#f0f0f0" }}>
+    <div className="restro-cards">
       <img
         className="restro-logo"
         alt="logo"
@@ -496,30 +496,9 @@ const BodyComponent = () => {
     <div className="body">
       <div className="search-bar">Search</div>
       <div className="restro-container">
-        <RestroCardComponent restroData={restroList[0]} />
-        <RestroCardComponent restroData={restroList[1]} />
-        <RestroCardComponent restroData={restroList[2]} />
-        <RestroCardComponent restroData={restroList[3]} />
-        <RestroCardComponent restroData={restroList[4]} />
-        <RestroCardComponent restroData={restroList[5]} />
-        <RestroCardComponent restroData={restroList[6]} />
-        <RestroCardComponent restroData={restroList[7]} />
-        <RestroCardComponent restroData={restroList[8]} />
-        <RestroCardComponent restroData={restroList[9]} />
-        <RestroCardComponent restroData={restroList[10]} />
-        <RestroCardComponent restroData={restroList[11]} />
-        <RestroCardComponent restroData={restroList[12]} />
-        <RestroCardComponent restroData={restroList[13]} />
-        <RestroCardComponent restroData={restroList[14]} />
-        <RestroCardComponent restroData={restroList[15]} />
-        <RestroCardComponent restroData={restroList[16]} />
-        <RestroCardComponent restroData={restroList[17]} />
-        <RestroCardComponent restroData={restroList[18]} />
-        <RestroCardComponent restroData={restroList[19]} />
-        <RestroCardComponent restroData={restroList[20]} />
-        <RestroCardComponent restroData={restroList[21]} />
-        <RestroCardComponent restroData={restroList[22]} />
-        <RestroCardComponent restroData={restroList[23]} />
+        {restroList.map((elements) => {
+          return <RestroCardComponent restroData={elements} />;
+        })}
       </div>
     </div>
   );
