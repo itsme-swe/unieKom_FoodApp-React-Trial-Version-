@@ -19,6 +19,7 @@ const HeaderComponent = () => {
   );
 };
 
+//⇒ Yae hamara Restaurant Component hai joh ki dynamically typed hai.
 const RestroCardComponent = (props) => {
   const { restroData } = props;
   return (
@@ -40,6 +41,7 @@ const RestroCardComponent = (props) => {
   );
 };
 
+//⇒ Yae data hamae backend sae milta hai, this data is in form of array of objects
 const restroList = [
   {
     info: {
