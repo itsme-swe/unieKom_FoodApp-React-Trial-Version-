@@ -94,7 +94,7 @@ Agar hum **multiline component** likh rahe hai toh humae jsx component ki body k
     <div className="restro-container">
     { restroList.map((elements) => {
         return (
-        <RestroCardComponent key={elements.info.id} restroData={elements} />
+        <RestroCardComponent 🔸key={elements.info.id} restroData={elements} />
         );
         })}
         </div>
