@@ -77,13 +77,17 @@ Agar hum **multiline component** likh rahe hai toh humae jsx component ki body k
         ∗ Address
         ∗ Contact
 
-7️⃣ **props :** Agar humae kisi functional component ko dynamically data pass karna hai toh hum use karte hai **"props",** stands for properties. Props are just normal arguments to your function. In industry we say passing props to the component.
+### Props:
 
-8️⃣ Use **json Viewer plugin** extension on chrome to see json data in a structured format.
+Agar humae kisi functional component ko dynamically data pass karna hai toh hum use karte hai **"props",** stands for properties. Props are just normal arguments to your function. In industry we say passing props to the component.
 
-9️⃣ **config Driven UI ⇒** Ka matlab hota hai hum apne UI ko data sae control karte hai. Config comes from backend.
+🔸 Use **json Viewer plugin** extension on chrome to see json data in a structured format.
 
-🔟 **.map()** jub bhi map() function use karenge kisi bhi array ko render karne kae liye toh hame hamesha **key** as prop bhi pass karni jaruri hoti hai. Agar hum key pass nhi karte hai toh hamare pass joh error hamae console window mae aata hai vo hota hai **" Warning: Each child in a list should have a unique "key" prop. "**. Isliye hamesha hamae key as prop pass karni chaiye.
+🔸 **config Driven UI ⇒** Ka matlab hota hai hum apne UI ko data sae control karte hai. Config comes from backend.
+
+### .map() function
+
+Jub bhi **map() function** use karenge kisi bhi array ko render karne kae liye toh hame hamesha **key** as prop bhi pass karni jaruri hoti hai. Agar hum key pass nhi karte hai toh hamare pass joh error hamae console window mae aata hai vo hota hai **" Warning: Each child in a list should have a unique "key" prop. "**. Isliye hamesha hamae key as prop pass karni chaiye.
 
     const BodyComponent = () => {
     return (
@@ -102,7 +106,7 @@ Agar hum **multiline component** likh rahe hai toh humae jsx component ki body k
         );
     };
 
-Never use index values as keys in map() function bcoz its not recommended. The second parameter in map() is index only.
+Never use index values as keys in **map() function** bcoz its not recommended. The second parameter in map() is index only.
 
 ### ➡ Folder Structure of React App
 
