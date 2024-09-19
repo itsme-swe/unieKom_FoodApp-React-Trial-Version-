@@ -104,6 +104,22 @@ Agar hum **multiline component** likh rahe hai toh humae jsx component ki body k
 
 Never use index values as keys in map() function bcoz its not recommended. The second parameter in map() is index only.
 
-### Folder Structure of React App
+### ➡ Folder Structure of React App
 
-**1.** src
+**1. src folder ⇒** Sabse phele hum **src folder** banayenge aur uskae andar hamra pura source code aayega.
+
+**2. App.js file** ko hum **src folder** kae andar rakhenge. Aur **App.js** hamari root level file hoti hai.
+
+**3. components folder ⇒** Phir hum apne sare components 1 folder mae rakhenge joh ki hota hai components folder aur components folder hota hai again hamare **src folder** kae andar.
+
+Aub jub bhi hum koi component likhenge toh vo hamae **export** bhi karna hoga.
+
+    const Header = () => {
+        return (
+            <div className="head">
+                <h1>Hello I am Header Component</h1>
+            </div>
+        )
+    };
+
+    export default Header;
