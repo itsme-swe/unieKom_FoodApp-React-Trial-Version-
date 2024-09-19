@@ -18,7 +18,7 @@
 
     🔸Transpilling JSX code to HTML Element
 
-4️⃣ React Components :
+### React Components :
 
 **1. Class Based Component**
 
@@ -58,9 +58,9 @@ Agar hum **multiline component** likh rahe hai toh humae jsx component ki body k
 
     const FunctionComponent = ( ) => <h1> I am functional component </h1>;
 
-6️⃣ Aub hum design kar rahe hai 1 **Food Delivery App** toh hamari app mae kaun kaunse components hongae.
+### ⇒ Aub hum design kar rahe hai ake Food Delivery App toh hamari app mae kaun kaunse components hongae.
 
-**⇒ Planning Phase of any app :**
+**1️⃣ Planning Phase of any app :**
 
     ◼ Sabse Upper Header Section Ayega
         ∗ Logo
