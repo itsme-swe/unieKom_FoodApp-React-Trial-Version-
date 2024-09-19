@@ -149,3 +149,5 @@ Aur aub hamae jaha bhi **named export** ko import karna hoga vaha hum isae kuch 
     import { CDN_URL } from "../utils/constants";
 
     🔸Hamae ismae curly braces'{ }' use karne hotae hai.
+
+Aur jub bhi hum is named import variable ko use karenge toh hame yae hamesha curly braces '{ }' kae andar he pass karna hoga.
