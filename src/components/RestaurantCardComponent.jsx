@@ -1,3 +1,5 @@
+import { CDN_URL } from "../utils/constants";
+
 //⇒ Yae hamara Restaurant Component hai joh ki dynamically typed hai.
 const RestroCardComponent = (props) => {
   const { restroData } = props;
@@ -11,10 +13,7 @@ const RestroCardComponent = (props) => {
       <img
         className="restro-logo"
         alt="logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
+        src={CDN_URL + cloudinaryImageId}
       />
       <h3>{name}</h3>
       <h5>{cuisines.join(", ")}</h5>

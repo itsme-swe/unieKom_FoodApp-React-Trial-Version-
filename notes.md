@@ -143,3 +143,9 @@ Aub jub bhi hum koi component likhenge toh vo hamae **export** bhi karna hoga.
         "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
     export const LOGO_URL = img1;
+
+Aur aub hamae jaha bhi **named export** ko import karna hoga vaha hum isae kuch is tarah import karengae:
+
+    import { CDN_URL } from "../utils/constants";
+
+    🔸Hamae ismae curly braces'{ }' use karne hotae hai.
