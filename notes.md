@@ -123,3 +123,23 @@ Aub jub bhi hum koi component likhenge toh vo hamae **export** bhi karna hoga.
     };
 
     export default Header;
+
+**🔸 Note ⇒** Never keep hard coded data inside component files. Hard coded data ho sukta hai backend sae api's form mae aa raha ho, images URL used in project, images stored on local machine etc. Toh hard coded data files ko hum alag folder mae rakhte hai jisae hum bolte hai **utils** stands for all utility files.
+
+**4. utils folder ⇒** utils folder kae andar hum vo sari files banayenge joh hamare poore project mae kahi bhi kam aa sukti hai. Jaise **constants.js ,** **mockData.js** etc.
+
+**5. import and export types ⇒** Hamare pass do tarikae kae import export hote hai :
+
+**1️⃣ default import export :** yae tarika use karte hai jub hame sirf 1 cheej export karni hoti hai.
+
+    export default Header;      → yae hota hai export karne ka tarika kisi bhi file ko
+
+    import Header from "./src/components/HeaderComponent";      → Aur yae hota us file ko jaha bhi apko import karna hota hai.
+
+**2️⃣ named import export :** Aur yae use karte hai jub hamae ake sae jaada cheeje export karni ho kisi file mae sae. Ismae hamae jaada kuch nhi karna hota bas joh bhi variable export karna hai uskae aage **"export"** likhdo.
+
+    export const CDN_URL =
+
+        "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+
+    export const LOGO_URL = img1;
