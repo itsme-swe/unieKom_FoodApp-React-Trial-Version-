@@ -77,7 +77,7 @@ Agar hum **multiline component** likh rahe hai toh humae jsx component ki body k
         ∗ Address
         ∗ Contact
 
-7️⃣ **props :** Agar humae kisi functional component ko dynamically data pass karna hai toh hum use karte hai **"props",** stands for properties. Props are just normnal arguments to your function. In industry we say passing props to the component.
+7️⃣ **props :** Agar humae kisi functional component ko dynamically data pass karna hai toh hum use karte hai **"props",** stands for properties. Props are just normal arguments to your function. In industry we say passing props to the component.
 
 8️⃣ Use **json Viewer plugin** extension on chrome to see json data in a structured format.
 
