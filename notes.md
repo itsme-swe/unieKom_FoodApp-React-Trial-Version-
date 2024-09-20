@@ -36,9 +36,9 @@
                     </h2>)
                 };
 
-To wrap functional component inside **render()** function we use root.render(<HeadingComponent/>).
+🔸 To wrap functional component inside **render()** function we use root.render(<HeadingComponent/>).
 
-5️⃣ Aub agar humae 1 functional component ko kisi dusrae component kae andar pass karna hota hai toh hum use karte hai,angle brackets kae anadr component name pass karte jisae humae dusrae component kae andar pass karna hai . Aur is process ko hum bolte hai "component composition" .
+Aub agar humae 1 functional component ko kisi dusrae component kae andar pass karna hota hai toh hum use karte hai,angle brackets kae anadr component name pass karte jisae humae dusrae component kae andar pass karna hai . Aur is process ko hum bolte hai "component composition" .
 Aur agar humae koi jsx element kisi component kae andar pass karna hai toh hum use karte hai curly braces "{jsxElement}".
 
     const Title = ( ) => {
