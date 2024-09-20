@@ -155,3 +155,15 @@ Aur aub hamae jaha bhi **named export** ko import karna hoga vaha hum isae kuch 
     🔸Hamae ismae curly braces'{ }' use karne hotae hai.
 
 Aur jub bhi hum is named import variable ko use karenge toh hame yae hamesha curly braces '{ }' kae andar he pass karna hoga.
+
+### Hooks :
+
+Hooks are also normal javaScript functions. These are pre-built functions. These are also known as utility functions.
+
+Most important and commonly used hooks are:
+
+**1️⃣ useState( ) :** Basically use to generate **state variable** in React. **useState( ) hook** use karne sae phele hamesha named import karna hoga "react" sae.
+
+    import { useState } from "react";
+
+**2️⃣ useEffect( )**

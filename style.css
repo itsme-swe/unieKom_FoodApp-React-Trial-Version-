@@ -66,3 +66,8 @@
   margin: 20px;
   justify-content: space-between;
 }
+
+.filter-button {
+  margin: 15px;
+  cursor: pointer;
+}
