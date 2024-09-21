@@ -162,8 +162,16 @@ Hooks are also normal javaScript functions. These are pre-built functions. These
 
 Most important and commonly used hooks are:
 
-**1️⃣ useState( ) :** Basically use to generate **state variable** in React. **useState( ) hook** use karne sae phele hamesha named import karna hoga "react" sae.
+**1️⃣ useState( ) :** Basically use to generate **state variable** in React. **useState( ) hook** use karne sae phele hamesha hame **useState** ko import karna hota hai aur yae as named import kiya jaata hai "react" sae.
 
     import { useState } from "react";
+
+    const [state, setState] = useState(initialValue);
+
+    🔸 state: This is the current state value.
+
+    🔸 setState: This function allows you to update the state.
+
+    🔸 initialValue: This is the initial value of the state, which can be anything (e.g., number, string, object, array, etc.).
 
 **2️⃣ useEffect( )**
