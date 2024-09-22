@@ -174,7 +174,7 @@ Most important and commonly used hooks are:
 
     🔸 initialValue: This is the initial value of the state, which can be anything (e.g., number, string, object, array, etc.).
 
-**2️⃣ useEffect( ) :** This hook is again a function which takes two arguments inside it. The first argument is callback function and the second argument is dependy array. But before using this hook we need to import this hook from react.
+**2️⃣ useEffect( ) :** This hook is again a function which takes two arguments inside it. The first argument is callback function and the second argument is dependency array. But before using this hook we need to import this hook from react.
 
     import { useEffect } from "react";
 
@@ -183,5 +183,7 @@ Most important and commonly used hooks are:
         console.log("useEffect called")
 
     }, [ ] );
+
+    🔸 Note: To see an example on useEffect( ) hook please look Body Component.
 
 Jis bhi component mae **useEffect( )** function use hoga usmae phele vo component render hoga uskae baad callback function joh ki ake argument hai **useEffect( )** function kae andar render hoga.
