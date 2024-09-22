@@ -1,6 +1,6 @@
 import RestroCardComponent from "./RestaurantCardComponent";
 import restroList from "../utils/restroList";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const BodyComponent = () => {
   const [listOfRestro, setListOfRestro] = useState(restroList);
