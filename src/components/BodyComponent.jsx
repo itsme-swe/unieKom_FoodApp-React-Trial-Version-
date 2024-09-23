@@ -1,6 +1,7 @@
 import RestroCardComponent from "./RestaurantCardComponent";
 import restroList from "../utils/restroList";
 import { useState, useEffect } from "react";
+import Shimmer from "./ShimmerComponent";
 
 const BodyComponent = () => {
   const [listOfRestro, setListOfRestro] = useState([]);
@@ -23,7 +24,7 @@ const BodyComponent = () => {
   };
 
   if (listOfRestro == 0) {
-    return <h2>Loding...</h2>;
+    return <Shimmer />;
   }
 
   return (
