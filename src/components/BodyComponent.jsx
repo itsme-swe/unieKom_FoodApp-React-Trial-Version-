@@ -23,11 +23,15 @@ const BodyComponent = () => {
     );
   };
 
-  if (listOfRestro == 0) {
+  // Conditional Rendering
+  /*if (listOfRestro == 0) {
     return <Shimmer />;
-  }
+  }*/
 
-  return (
+  // Using Ternary Operator on conditional rendering . Here the condition is if(listOfrestro == 0) so return Shimmer Component, else return below code
+  return listOfRestro == 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <button
