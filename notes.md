@@ -186,4 +186,6 @@ Most important and commonly used hooks are:
 
     🔸 Note: To see an example on useEffect( ) hook please look Body Component.
 
-Jis bhi component mae **useEffect( )** function use hoga usmae phele vo component render hoga uskae baad callback function joh ki ake argument hai **useEffect( )** function kae andar render hoga. Hum har us jagae **useEffect( ) hook** ko use kartae hai jaha pae hamae component render honae kae baad changes karne hotae hai.
+Jis bhi component mae **useEffect( )** function use hoga usmae phele vo component render hoga uskae baad callback function joh ki ake argument hai **useEffect( )** function kae andar phir vo render hoga. Hum har us jagae **useEffect( ) hook** ko use kartae hai jaha pae hamae component render honae kae baad changes karne hotae hai apne UI pae.
+
+**💥 Shimmer UI ⇒** Shimmer is a temporary animated placeholder used when data from an API call takes time to load, and we don't want to block rendering the rest of the UI. Shimmer displays temporary cards until the data has been fetched.
