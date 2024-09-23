@@ -15,8 +15,7 @@ const BodyComponent = () => {
     );
 
     const json = await data.json();
-
-    console.log("Swiggy API", json);
+    console.log(json);
 
     setListOfRestro(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -24,7 +23,7 @@ const BodyComponent = () => {
   };
 
   if (listOfRestro == 0) {
-    return <h2>Loading...</h2>;
+    return <h2>Loding...</h2>;
   }
 
   return (
