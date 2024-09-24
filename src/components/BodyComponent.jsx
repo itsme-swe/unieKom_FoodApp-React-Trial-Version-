@@ -18,18 +18,20 @@ const BodyComponent = () => {
     const json = await data.json();
     console.log(json);
 
-    setListOfRestro(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
-  };
+    const restroData =
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants;
 
+    setListOfRestro(restroData);
+  };
   // Conditional Rendering
   /*if (listOfRestro == 0) {
     return <Shimmer />;
   }*/
 
   // Using Ternary Operator on conditional rendering . Here the condition is if(listOfrestro == 0) so return Shimmer Component, else return below code
-  return listOfRestro == 0 ? (
+
+  return listOfRestro.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="body">

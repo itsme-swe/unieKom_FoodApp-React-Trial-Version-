@@ -11,6 +11,7 @@ const HeaderComponent = () => {
           <li>Home</li>
           <li>About Us</li>
           <li>Cart</li>
+          <button className="login">Login</button>
         </ul>
       </div>
     </div>
