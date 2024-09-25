@@ -8,6 +8,8 @@ const BodyComponent = () => {
 
   const [searchTxt, setSearchTxt] = useState("");
 
+  console.log("BodyComponent Rendering");
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -50,6 +52,12 @@ const BodyComponent = () => {
             className="search-btn"
             onClick={() => {
               console.log(searchTxt);
+
+              const filterRestroList = listOfRestro.filter((elements) =>
+                elements.info.name.includes(searchTxt)
+              );
+
+              setListOfRestro(filterRestroList);
             }}
           >
             Search

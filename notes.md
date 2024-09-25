@@ -194,8 +194,10 @@ Jis bhi component mae **useEffect( )** function use hoga usmae phele vo componen
 
 **💥 Key Point 2 :** Agar hamae **< input />** tag mae value enter karni hai toh hamae **value attribute** ko wrap karna hoga **local state variable** kae andar.
 
+🔸 Whenever **state variable** update, react triggers a reconciliation cycle ( re-render the component ).
+
     const [searchTxt, setSearchTxt] = useState(" ");
 
     <input type="text" className="search" value={searchTxt}>;
 
-🔸 Whenever **state variable** update, react triggers a reconciliation cycle ( re-render the component ).
+Yani ki aub jitni baar hum search text mae kuch bhi enter karenge toh hamara component baar-baar re-render karega.
