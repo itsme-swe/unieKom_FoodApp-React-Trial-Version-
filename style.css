@@ -124,3 +124,19 @@
   background-color: #0056b3;
   transform: scale(1.05);
 }
+
+.filter {
+  display: flex;
+}
+
+.search {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.search-box,
+.search-btn {
+  cursor: pointer;
+  padding: 3px;
+  margin: 2px;
+}

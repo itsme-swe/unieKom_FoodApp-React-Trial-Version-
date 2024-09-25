@@ -6,6 +6,8 @@ import Shimmer from "./ShimmerComponent";
 const BodyComponent = () => {
   const [listOfRestro, setListOfRestro] = useState([]);
 
+  const [searchTxt, setSearchTxt] = useState("");
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -21,7 +23,6 @@ const BodyComponent = () => {
     const restroData =
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
-
     setListOfRestro(restroData);
   };
   // Conditional Rendering
@@ -36,6 +37,24 @@ const BodyComponent = () => {
   ) : (
     <div className="body">
       <div className="filter">
+        <div className="search">
+          <input
+            type="text"
+            className="search-box"
+            value={searchTxt}
+            onChange={(e) => {
+              setSearchTxt(e.target.value);
+            }}
+          />
+          <button
+            className="search-btn"
+            onClick={() => {
+              console.log(searchTxt);
+            }}
+          >
+            Search
+          </button>
+        </div>
         <button
           className="filter-button"
           onClick={() => {

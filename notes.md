@@ -189,3 +189,7 @@ Most important and commonly used hooks are:
 Jis bhi component mae **useEffect( )** function use hoga usmae phele vo component render hoga uskae baad callback function joh ki ake argument hai **useEffect( )** function kae andar phir vo render hoga. Hum har us jagae **useEffect( ) hook** ko use kartae hai jaha pae hamae component render honae kae baad changes karne hotae hai apne UI pae.
 
 **💥 Shimmer UI ⇒** Shimmer is a temporary animated placeholder used when data from an API call takes time to load, and we don't want to block rendering the rest of the UI. Shimmer displays temporary cards until the data has been fetched.
+
+**💥 Key Point 1 :** Jub bhi hum apne local state variable ko change karenge toh react re-render karega us component ko.
+
+🔸 Whenever **state variable** update, react triggers a reconciliation cycle ( re-render the component ).
